@@ -1,19 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virus C</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style: none;
+      }
+      .container {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      header {
+        border-bottom: 1px solid red;
+        background-color: rgba(255, 0, 0, 0.016);
+        position: fixed;
+        width: 80%;
+        background-color: white;
+        z-index: 5;
+        /* box-shadow: 0px 3px 20px 0px #00000021; */
+      }
+
+      header ul li img {
+        width: 70px;
+      }
+
+      header ul {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      header ul li:first-of-type,
+      header ul li:last-of-type {
+        padding-top: 2%;
+      }
+
+      /* main photo */
+      main {
+        padding-top: 100px;
+        position: relative;
+        padding-bottom: 100px;
+      }
+
+      main img {
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 50px;
+      }
+      main .article {
+        line-height: 2;
+      }
+      main .article p {
+        padding-left: 30px;
+        font-size: 20px;
+        color: #333;
+      }
+
+      main .article .liver-photo {
+        width: 20%;
+        position: absolute;
+      }
+      .article ul {
+        margin-left: 100px;
+        font-size: 20px;
+        list-style: disc;
+      }
+      footer {
+        font-size: 24px;
+        height: 70px;
+        border-top: 1px solid red;
+        /* background-color: red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      footer .links ul {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul li a {
+        padding: 0 10px;
+        border-radius: 5px;
+      }
+      ul li a:hover {
+        background-color: red;
+        color: white;
+      }
     </style>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li>
+            <img src="https://up6.cc/2022/12/167053040260551.png" alt="" />
+          </li>
+          <li><a href="#">Test</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="container">
+      <main id="home">
+        <img src="https://up6.cc/2022/12/167053129327281.jpeg" alt="" />
+        <div class="article">
+          <h1>Overview</h1>
+          <p class="article-content">
+            Hepatitis C is a viral infection that causes liver inflammation,
+            sometimes leading to serious liver damage. <br />
+            The hepatitis C virus (HCV) spreads through contaminated blood.
+            <br />
+            <!-- <img src="https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/11/15/17/40/ds00097_-ds00373_-ds00398_-ds00399_-ds00411_-ds00455_-ds00676_-ds00743_-ds00785_-ds00811_-ds00961_-ds01125_-ds01133_-my00349_im02250_r7_liverthu_jpg.jpg" -->
+            <!-- alt="" class="liver-photo" /> -->
+            Until recently, hepatitis C treatment required weekly injections and
+            oral medications that many HCV-infected people couldn't take because
+            of other health problems or unacceptable side effects. <br />
+            That's changing. Today, chronic HCV is usually curable with oral
+            medications taken every day for two to six months. <br />
+            Still, about half of people with HCV don't know they're infected,
+            mainly because they have no symptoms, which can take decades to
+            appear. <br />
+            For that reason, the U.S. Preventive Services Task Force recommends
+            that all adults ages 18 to 79 years be screened for hepatitis C,
+            even those without symptoms or known liver disease. <br />
+            The largest group at risk includes everyone born between 1945 and
+            1965 — a population five times more likely to be infected than those
+            born in other years.
+          </p>
+          <h1>Symptoms</h1>
+          <p>
+            Long-term infection with the hepatitis C virus is known as chronic
+            hepatitis C. Chronic hepatitis C is usually a "silent" infection for
+            many years, until the virus damages the liver enough to cause the
+            signs and symptoms of liver disease. <br />
+            Signs and symptoms include: <br />
+            <span>
+              <ul>
+                <li>Bleeding easily</li>
+                <li>Bruising easily</li>
+                <li>Fatigue</li>
+                <li>Poor appetite</li>
+                <li>Yellow discoloration of the skin and eyes (jaundice)</li>
+                <li>Dark-colored urine</li>
+                <li>Itchy skin</li>
+                <li>Fluid buildup in your abdomen (ascites)</li>
+                <li>Swelling in your legs</li>
+                <li>Weight loss</li>
+                <li>
+                  Confusion, drowsiness and slurred speech (hepatic
+                  encephalopathy)
+                </li>
+                <li>Spiderlike blood vessels on your skin (spider angiomas)</li>
+              </ul>
+            </span>
+            <br />
+          </p>
+          <p>
+            Every chronic hepatitis C infection starts with an acute phase.
+            <br />
+            Acute hepatitis C usually goes undiagnosed because it rarely causes
+            symptoms. <br />
+            When signs and symptoms are present, they may include jaundice,
+            along with fatigue, nausea, fever and muscle aches. <br />
+            Acute symptoms appear one to three months after exposure to the
+            virus and last two weeks to three months.
+            <br />
+            Acute hepatitis C infection doesn't always become chronic. <br />
+            Some people clear HCV from their bodies after the acute phase, an
+            outcome known as spontaneous viral clearance. <br />
+            In studies of people diagnosed with acute HCV, rates of spontaneous
+            viral clearance have varied from 15% to 25%. <br />
+            Acute hepatitis C also responds well to antiviral therapy. <br />
+          </p>
+        </div>
+      </main>
+      <footer>
+        <div class="copyright">
+          <p>Made with ❤️ by Team</p>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="">Test</a></li>
+            <li><a href="#home">Home</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
