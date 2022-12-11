@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style: none;
+      }
+      .container {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      header {
+        border-bottom: 1px solid red;
+        background-color: rgba(255, 0, 0, 0.016);
+        position: fixed;
+        width: 80%;
+        background-color: white;
+        z-index: 5;
+        top: 0;
+      }
+
+      header ul li img {
+        width: 70px;
+      }
+
+      header ul {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      header ul li:first-of-type,
+      header ul li:last-of-type {
+        padding-top: 2%;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        width: 50%;
+        border: 1px solid red;
+        border-radius: 20px;
+        height: 400px;
+        margin: 10px auto;
+      }
+      .content h1 {
+        margin: 20px 20px 20px;
+      }
+      .content p:first-of-type {
+        margin: 0 10px 0 10px;
+      }
+      .content p {
+        line-height: 2;
+        font-size: 20px;
+        color: #777;
+        margin: 0 10px 0 60px;
+      }
+      footer {
+        font-size: 24px;
+        height: 70px;
+        border-top: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      footer .links ul {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul li a {
+        padding: 0 10px;
+        border-radius: 5px;
+      }
+      ul li a:hover {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <img src="https://up6.cc/2022/12/167053040260551.png" alt="" />
+          </li>
+          <li><a href="form">Test</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="container">
+      <div class="content">
+        <p>You are :</p>
+        <h1>Blood Donor</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, ea? Natus similique ex aut possimus odit nisi
+          excepturi eius sequi molestiae, reprehenderit, voluptatem quasi ipsum
+          facere quia est. Suscipit, aperiam!
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <footer>
+        <div class="copyright">
+          <p>Made with ❤️ by Team</p>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="">Test</a></li>
+            <li><a href="#home">Home</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
