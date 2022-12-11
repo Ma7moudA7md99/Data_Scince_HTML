@@ -1,12 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style: none;
+      }
+      .container {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      header {
+        border-bottom: 1px solid red;
+        background-color: rgba(255, 0, 0, 0.016);
+        position: fixed;
+        width: 80%;
+        background-color: white;
+        z-index: 5;
+        top: 0;
+      }
+
+      header ul li img {
+        width: 70px;
+      }
+
+      header ul {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      header ul li:first-of-type,
+      header ul li:last-of-type {
+        padding-top: 2%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        border: 1px solid red;
+        border-radius: 20px;
+        height: 700px;
+        margin: 10px auto;
+      }
+      form div {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 5%;
+        margin: 10px 0;
+      }
+      form div input {
+        outline: none;
+        border: 1px solid red;
+        border-radius: 50px;
+        padding: 5px 10px;
+        width: 80%;
+        height: 100%;
+        font-size: 18px;
+      }
+      form div:first-of-type {
+        margin-top: 35px;
+      }
+
+      form div label {
+        position: absolute;
+        top: 20%;
+        left: 13%;
+        letter-spacing: 5px;
+        transition: 0.2s all;
+        font-size: 20px;
+        color: #777;
+      }
+      form div input:focus {
+        border: 1px solid black;
+      }
+      form div input:focus ~ label {
+        top: -48%;
+        background-color: white;
+        color: red;
+        font-size: 15px;
+        letter-spacing: 0;
+        z-index: -1;
+      }
+      form div span {
+        position: absolute;
+        color: red;
+        right: 15%;
+        top: -48%;
+        background-color: white;
+        display: none;
+        transition: 0.1s all;
+      }
+      form div input:focus ~ span {
+        display: inline;
+      }
+      form button {
+        width: 80%;
+        height: 35px;
+        border-radius: 50px;
+        margin-top: 10px;
+        background-color: white;
+        border: 1px solid red;
+        font-size: 20px;
+        letter-spacing: 5px;
+      }
+      form button:hover {
+        border-color: black;
+        background-color: rgba(255, 0, 0, 0.7);
+        color: white;
+        cursor: pointer;
+      }
+      footer {
+        font-size: 24px;
+        height: 70px;
+        border-top: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      footer .links ul {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul li a {
+        padding: 0 10px;
+        border-radius: 5px;
+      }
+      ul li a:hover {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <img src="https://up6.cc/2022/12/167053040260551.png" alt="" />
+          </li>
+          <li><a href="form">Test</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="container">
+      <form action="POST">
+        <div class="ageclass">
+          <input type="number" class="age" required />
+          <label for="age">Age</label>
+        </div>
+        <div class="genderclass">
+          <input type="text" class="gender" required />
+          <label for="gender">Gender</label>
+          <span>F = Female, M = Male</span>
+        </div>
+        <div class="albclass">
+          <input type="number" class="alb" required />
+          <label for="alb">ALB</label>
+          <span>Albumin Blood Test</span>
+        </div>
+        <div class="alpclass">
+          <input type="number" class="alp" required />
+          <label for="alp">ALP</label>
+          <span>Alkaline Phosphatase</span>
+        </div>
+        <div class="altlass">
+          <input type="number" class="alt" required />
+          <label for="alt">ALT</label>
+          <span>Alanine Transaminase</span>
+        </div>
+        <div class="astclass">
+          <input type="number" class="ast" required />
+          <label for="ast">AST</label>
+          <span>Aspartate Aminotransferase</span>
+        </div>
+        <div class="bilclass">
+          <input type="number" class="bil" required />
+          <label for="bil">BIL</label>
+          <span>Bilirubain</span>
+        </div>
+        <div class="checlass">
+          <input type="number" class="che" required />
+          <label for="che">CHE</label>
+          <span>Cholinestrase</span>
+        </div>
+        <div class="cholclass">
+          <input type="number" class="chol" required />
+          <label for="chol">CHOL</label>
+          <span>Cholesterol</span>
+        </div>
+        <div class="creaclass">
+          <input type="number" class="crea" required />
+          <label for="crea">CREA</label>
+          <span>Creatinine</span>
+        </div>
+        <div class="ggtclass">
+          <input type="number" class="ggt" required />
+          <label for="ggt">GGT</label>
+          <span>Gamma-glutamyl Transferase</span>
+        </div>
+        <button>Ok</button>
+      </form>
+    </div>
+    <div class="container">
+      <footer>
+        <div class="copyright">
+          <p>Made with ❤️ by Team</p>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="">Test</a></li>
+            <li><a href="#home">Home</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
